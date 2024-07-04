@@ -2,15 +2,45 @@
 
 ###login
 POST http://localhost:1234/auth/login
+Content-Type:application/json
+
+{
+  "email":"344",
+  "password":"344"
+}
+
+###logout de usuario
+POST http://localhost:1234/auth/logout
+
+###perfil del usuario
+GET http://localhost:1234/auth/profile
+
+### update de usuario
+POST http://localhost:1234/auth/update
+Content-Type:application/json
+
+{
+    "name":"34",
+    "email":"344",
+    "password":"344",
+    "address":{
+        "street":"marte",
+        "city":"swat",
+        "state":"NOSE",
+        "zip":"452",
+        "country":"NOSE"
+      },
+    "phone":"777-777-777"
+}
 
 ###register
 POST http://localhost:1234/auth/register
 Content-Type:application/json
 
 {
-    "name":"jaime ramos",
-    "email":"283",
-    "password":"123",
+    "name":"344",
+    "email":"344",
+    "password":"344",
     "address":{
         "street":"NOSE",
         "city":"NOSE",
@@ -20,3 +50,4 @@ Content-Type:application/json
       },
     "phone":"123-3421-123"
 }
+
