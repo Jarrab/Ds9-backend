@@ -1,0 +1,22 @@
+//prueba de login y register
+
+###login
+POST http://localhost:1234/auth/login
+
+###register
+POST http://localhost:1234/auth/register
+Content-Type:application/json
+
+{
+    "name":"jaime ramos",
+    "email":"283",
+    "password":"123",
+    "address":{
+        "street":"NOSE",
+        "city":"NOSE",
+        "state":"NOSE",
+        "zip":"452",
+        "country":"NOSE"
+      },
+    "phone":"123-3421-123"
+}
