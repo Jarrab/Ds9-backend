@@ -10,6 +10,6 @@ itemsRoutes.get("/item/:id", itemsController.getItem);
 
 itemsRoutes.post("/createItems", auth, itemsController.createItem);
 
-itemsRoutes.delete("/deleteItems",auth, itemsController.deleteItem);
+itemsRoutes.delete("/deleteItems/:id",auth, itemsController.deleteItem);
 
 itemsRoutes.patch("/updateItems/:id",auth, itemsController.updateItem);

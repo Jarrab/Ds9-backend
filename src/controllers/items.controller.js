@@ -39,7 +39,7 @@ export class itemsController {
 
   static async deleteItem(req, res) {
     try {
-      const deleteItem = await Item.findByIdAndDelete(req.params.id);
+      const deleteItem = await Item.findOneAndDelete(req.params.id);
       if (!deleteItem)
         return res.status(404).json({ message: "Task not found" });
 
